@@ -1,0 +1,4 @@
+- hosts: localhost
+  tasks:
+    - name: Déployer l'application dans Kubernetes
+      shell: kubectl apply -f deployment.yaml
