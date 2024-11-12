@@ -1,5 +1,6 @@
+
 - hosts: localhost
   tasks:
     - name: Déployer l'application dans Kubernetes
-      shell: kubectl apply -f ${WORKSPACE}/k8s/deployment.yaml
+      shell: kubectl apply -f ${WORKSPACE}/k8s/deployment.yaml --validate=false --insecure-skip-tls-verify=true
 
